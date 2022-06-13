@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+button {
+  border:none;
+  background: none;
+  cursor: pointer;
+}
+
+// Navbar
+.nav-container {
+  background: rgba(91, 181, 195, 0.887);
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 2.5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+
+  h1.title {
+    font-size: 2em;
+    letter-spacing: 1px;
+    color : #fff;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 7em;
+    p.option {
+      color:#fff;
+      letter-spacing: 1px;
+      font-size: 1em;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+// Section
+section {
+  background: #888;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  div.color-display {
+    background: rgba(63, 63, 63, 0.574);
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    letter-spacing: 1px;
+
+    span {
+      color:rgb(70, 171, 189);
+    }
+
+    @media (max-width: 768px) {
+    font-size:1em;
+  }
+  }
+  button.btn {
+    background: rgba(63, 63, 63, 0.544);
+    color: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    border: 5px solid rgba(0, 0, 0, 0.368);
+    margin-top: 5em;
+    padding: 20px;
+    font-size: 2em;
+    &:hover {
+      background: rgba(0, 0, 0, 0.634);
+      color: rgb(255, 255, 255);
+    }
+    @media (max-width: 768px) {
+        font-size: 1em;
+      }
+  }
+}

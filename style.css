@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-container {
+  background: rgba(91, 181, 195, 0.887);
+  padding-block: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 2.5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2.5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container h1.title {
+  font-size: 2em;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container .nav.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 7em;
+}
+
+.nav-container .nav.options p.option {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 1em;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section {
+  background: #888;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section div.color-display {
+  background: rgba(63, 63, 63, 0.574);
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+section div.color-display span {
+  color: #46abbd;
+}
+
+@media (max-width: 768px) {
+  section div.color-display {
+    font-size: 1em;
+  }
+}
+
+section button.btn {
+  background: rgba(63, 63, 63, 0.544);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  border: 5px solid rgba(0, 0, 0, 0.368);
+  margin-top: 5em;
+  padding: 20px;
+  font-size: 2em;
+}
+
+section button.btn:hover {
+  background: rgba(0, 0, 0, 0.634);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  section button.btn {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
